@@ -21,6 +21,12 @@ namespace TodoApp
 
         }
 
+        private void clearTaskButton_Click(object sender, EventArgs e)
+        {
+            titleTextBox.Text = "";
+            descriptionTextBox.Text = "";
+        }
+
         private void editButton_Click(object sender, EventArgs e)
         {
             isEditing = true;
@@ -43,7 +49,7 @@ namespace TodoApp
 
         private void saveButton_Click(object sender, EventArgs e)
         {
-            if(isEditing) 
+            if (isEditing)
             {
                 todoList.Rows[taskGridView.CurrentCell.RowIndex]["Title"] = titleTextBox.Text;
                 todoList.Rows[taskGridView.CurrentCell.RowIndex]["Description"] = descriptionTextBox.Text;
@@ -58,5 +64,7 @@ namespace TodoApp
             descriptionTextBox.Text = "";
             isEditing = false;
         }
+
+        
     }
 }

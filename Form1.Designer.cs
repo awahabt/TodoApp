@@ -38,6 +38,7 @@
             deleteButton = new Button();
             taskViewText = new Label();
             taskGridView = new DataGridView();
+            clearTaskButton = new Button();
             ((System.ComponentModel.ISupportInitialize)taskGridView).BeginInit();
             SuspendLayout();
             // 
@@ -136,7 +137,7 @@
             // 
             taskViewText.AutoSize = true;
             taskViewText.Font = new Font("Arial Rounded MT Bold", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            taskViewText.Location = new Point(51, 261);
+            taskViewText.Location = new Point(51, 316);
             taskViewText.Name = "taskViewText";
             taskViewText.Size = new Size(154, 24);
             taskViewText.TabIndex = 8;
@@ -147,16 +148,30 @@
             taskGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             taskGridView.BackgroundColor = Color.White;
             taskGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            taskGridView.Location = new Point(51, 292);
+            taskGridView.Location = new Point(51, 347);
             taskGridView.Name = "taskGridView";
             taskGridView.Size = new Size(872, 360);
             taskGridView.TabIndex = 9;
+            // 
+            // clearTaskButton
+            // 
+            clearTaskButton.BackColor = Color.Black;
+            clearTaskButton.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            clearTaskButton.ForeColor = Color.White;
+            clearTaskButton.Location = new Point(420, 264);
+            clearTaskButton.Name = "clearTaskButton";
+            clearTaskButton.Size = new Size(134, 35);
+            clearTaskButton.TabIndex = 10;
+            clearTaskButton.Text = "Clear Task";
+            clearTaskButton.UseVisualStyleBackColor = false;
+            clearTaskButton.Click += clearTaskButton_Click;
             // 
             // TodoForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(971, 698);
+            ClientSize = new Size(971, 761);
+            Controls.Add(clearTaskButton);
             Controls.Add(taskGridView);
             Controls.Add(taskViewText);
             Controls.Add(deleteButton);
@@ -187,5 +202,6 @@
         private Button deleteButton;
         private Label taskViewText;
         private DataGridView taskGridView;
+        private Button clearTaskButton;
     }
 }
