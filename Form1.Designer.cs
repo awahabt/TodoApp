@@ -44,9 +44,9 @@
             // 
             // headerText
             // 
-            headerText.BackColor = Color.Black;
+            headerText.BackColor = Color.DimGray;
             headerText.Font = new Font("Arial Rounded MT Bold", 26.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            headerText.ForeColor = Color.White;
+            headerText.ForeColor = Color.Black;
             headerText.Location = new Point(-1, 0);
             headerText.Name = "headerText";
             headerText.Size = new Size(977, 77);
@@ -96,9 +96,9 @@
             // 
             // saveButton
             // 
-            saveButton.BackColor = Color.Black;
+            saveButton.BackColor = Color.DimGray;
             saveButton.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            saveButton.ForeColor = Color.White;
+            saveButton.ForeColor = Color.Black;
             saveButton.Location = new Point(687, 132);
             saveButton.Name = "saveButton";
             saveButton.Size = new Size(75, 31);
@@ -109,9 +109,9 @@
             // 
             // editButton
             // 
-            editButton.BackColor = Color.Black;
+            editButton.BackColor = Color.DimGray;
             editButton.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            editButton.ForeColor = Color.White;
+            editButton.ForeColor = Color.Black;
             editButton.Location = new Point(768, 132);
             editButton.Name = "editButton";
             editButton.Size = new Size(75, 31);
@@ -122,9 +122,9 @@
             // 
             // deleteButton
             // 
-            deleteButton.BackColor = Color.Black;
+            deleteButton.BackColor = Color.DimGray;
             deleteButton.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            deleteButton.ForeColor = Color.White;
+            deleteButton.ForeColor = Color.Black;
             deleteButton.Location = new Point(848, 132);
             deleteButton.Name = "deleteButton";
             deleteButton.Size = new Size(75, 31);
@@ -155,9 +155,9 @@
             // 
             // clearTaskButton
             // 
-            clearTaskButton.BackColor = Color.Black;
+            clearTaskButton.BackColor = Color.DimGray;
             clearTaskButton.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            clearTaskButton.ForeColor = Color.White;
+            clearTaskButton.ForeColor = Color.Black;
             clearTaskButton.Location = new Point(420, 264);
             clearTaskButton.Name = "clearTaskButton";
             clearTaskButton.Size = new Size(134, 35);
@@ -170,6 +170,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(971, 761);
             Controls.Add(clearTaskButton);
             Controls.Add(taskGridView);
