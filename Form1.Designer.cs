@@ -104,6 +104,7 @@
             saveButton.TabIndex = 5;
             saveButton.Text = "Save";
             saveButton.UseVisualStyleBackColor = false;
+            saveButton.Click += saveButton_Click;
             // 
             // editButton
             // 
@@ -116,6 +117,7 @@
             editButton.TabIndex = 6;
             editButton.Text = "Edit";
             editButton.UseVisualStyleBackColor = false;
+            editButton.Click += editButton_Click;
             // 
             // deleteButton
             // 
@@ -128,6 +130,7 @@
             deleteButton.TabIndex = 7;
             deleteButton.Text = "Delete";
             deleteButton.UseVisualStyleBackColor = false;
+            deleteButton.Click += deleteButton_Click;
             // 
             // taskViewText
             // 
